@@ -29,8 +29,9 @@ CREATE TABLE `answer` (
   `student_marks` int(10) DEFAULT NULL,
   PRIMARY KEY (`sid`),
   KEY `subid` (`subid`),
-  CONSTRAINT `answer_ibfk_1` FOREIGN KEY (`sid`) REFERENCES `student` (`sid`),
-  CONSTRAINT `answer_ibfk_3` FOREIGN KEY (`subid`) REFERENCES `subject` (`subid`)
+  ALTER TABLE `answer` ADD CONSTRAINT `answer_ibfk_1` FOREIGN KEY (`sid`) REFERENCES `student` (`sid`),
+
+  ALTER TABLE `answer` ADD CONSTRAINT `answer_ibfk_3` FOREIGN KEY (`subid`) REFERENCES `subject` (`subid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 /*Data for the table `answer` */
