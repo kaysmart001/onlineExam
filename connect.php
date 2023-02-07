@@ -1,6 +1,6 @@
 <?php
 	
-$link = mysql_connect('localhost', 'root', 'b0kubh00t');
+$link = mysql_connect('sql311.epizy.com', 'epiz_33459705', 'b0kubh00t');
 		if (!$link) {
     	die('Could not connect: ' . mysql_error());
 		}
