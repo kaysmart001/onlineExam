@@ -1,8 +1,10 @@
 /*
-SQLyog Ultimate v11.11 (64 bit)
+
+
 MySQL - 5.7.14-log : Database - pre_registration
 *********************************************************************
-*/
+*/
+
 
 /*!40101 SET NAMES utf8 */;
 
