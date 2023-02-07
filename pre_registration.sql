@@ -20,7 +20,7 @@ MySQL - 5.7.14-log : Database - pre_registration
 
 /*Table structure for table `answer` */
 
-DROP TABLE IF EXISTS `answer`;
+
 
 CREATE TABLE `answer` (
   `sid` int(7) NOT NULL,
@@ -39,7 +39,7 @@ insert  into `answer`(`sid`,`subid`,`total_marks`,`student_marks`) values (13300
 
 /*Table structure for table `course` */
 
-DROP TABLE IF EXISTS `course`;
+
 
 CREATE TABLE `course` (
   `cid` varchar(7) NOT NULL,
@@ -56,7 +56,7 @@ insert  into `course`(`cid`,`cname`,`ccredit`,`section`,`time_day`) values ('CSC
 
 /*Table structure for table `question` */
 
-DROP TABLE IF EXISTS `question`;
+
 
 CREATE TABLE `question` (
   `qid` int(255) NOT NULL AUTO_INCREMENT,
@@ -75,11 +75,11 @@ CREATE TABLE `question` (
 
 /*Data for the table `question` */
 
-insert  into `question`(`qid`,`question`,`op1`,`op2`,`op3`,`op4`,`correct_ans`,`marks`,`subid`) values (1,'	\r\nWhich of the following is not a type of constructor?','Copy constructor','Friend constructor','Default constructor','Parameterized constructor','b',1,'CSC101'),(2,'why cout is used in C++ ?','for output','fot input','for both A & B','none','a',1,'CSC101'),(3,'why cin is used in C++ ?','for output','fot input','for both A & B','none','b',1,'CSC101L'),(4,'What is the MATLAB funtion for Symmetrical Hard Limit','hardlim','harldlims','logsigmoid','purelin','b',1,'CSC424'),(5,'Which of the following type of class allows only one object of it to be created?','Virtual class\r\n','Abstract class\r\n','Singleton class\r\n','Friend class\r\n','c',1,'CSC101'),(6,'In an undirected graph the number of nodes with odd degree must be','Zero','Odd','Prime','Even','d',1,'CSC201'),(7,'The relation { (1,2), (1,3), (3,1), (1,1), (3,3), (3,2), (1,4), (4,2), (3,4)} is','Reflexive','Transitive','Symmetric','Asymmetric','b',1,'CSC201'),(8,'In how many ways can a president and vice president be chosen from a set of 30 candidates? \r\n','820','850','880','870','d',1,'CSC201'),(9,'There are _____ tuples in finite state machine.','4','5','6','unlimited','b',1,'CSC301'),(11,'To describe the complement of a language, it is very important to describe the ----------- of that language over which the language is defined.','Alphabet','Regular Expression\r\n','String','Word','a',1,'CSC301'),(12,' If L1 and L2 are regular languages is/are also regular language(s).','L1 + L2','L1L2','L1','All of above\r\n','d',1,'CSC301');
+insert  into `question`(`qid`,`question`,`op1`,`op2`,`op3`,`op4`,`correct_ans`,`marks`,`suid`) values (1,'	\r\nWhich of the following is not a type of constructor?','Copy constructor','Friend constructor','Default constructor','Parameterized constructor','b',1,'CSC101'),(2,'why cout is used in C++ ?','for output','fot input','for both A & B','none','a',1,'CSC101'),(3,'why cin is used in C++ ?','for output','fot input','for both A & B','none','b',1,'CSC101L'),(4,'What is the MATLAB funtion for Symmetrical Hard Limit','hardlim','harldlims','logsigmoid','purelin','b',1,'CSC424'),(5,'Which of the following type of class allows only one object of it to be created?','Virtual class\r\n','Abstract class\r\n','Singleton class\r\n','Friend class\r\n','c',1,'CSC101'),(6,'In an undirected graph the number of nodes with odd degree must be','Zero','Odd','Prime','Even','d',1,'CSC201'),(7,'The relation { (1,2), (1,3), (3,1), (1,1), (3,3), (3,2), (1,4), (4,2), (3,4)} is','Reflexive','Transitive','Symmetric','Asymmetric','b',1,'CSC201'),(8,'In how many ways can a president and vice president be chosen from a set of 30 candidates? \r\n','820','850','880','870','d',1,'CSC201'),(9,'There are _____ tuples in finite state machine.','4','5','6','unlimited','b',1,'CSC301'),(11,'To describe the complement of a language, it is very important to describe the ----------- of that language over which the language is defined.','Alphabet','Regular Expression\r\n','String','Word','a',1,'CSC301'),(12,' If L1 and L2 are regular languages is/are also regular language(s).','L1 + L2','L1L2','L1','All of above\r\n','d',1,'CSC301');
 
 /*Table structure for table `student` */
 
-DROP TABLE IF EXISTS `student`;
+
 
 CREATE TABLE `student` (
   `sid` int(7) NOT NULL,
@@ -102,7 +102,7 @@ insert  into `student`(`sid`,`name`,`major`,`minor`,`semester`,`course1`,`course
 
 /*Table structure for table `subject` */
 
-DROP TABLE IF EXISTS `subject`;
+
 
 CREATE TABLE `subject` (
   `subid` varchar(7) NOT NULL,
@@ -120,7 +120,7 @@ insert  into `subject`(`subid`,`sname`,`sdesc`,`sid`) values ('CSC101','Introduc
 
 /*Table structure for table `test` */
 
-DROP TABLE IF EXISTS `test`;
+
 
 CREATE TABLE `test` (
   `tid` varchar(100) NOT NULL,
@@ -141,7 +141,7 @@ insert  into `test`(`tid`,`tname`,`tdesc`,`total_question`,`duration`,`secret`,`
 
 /*Table structure for table `user` */
 
-DROP TABLE IF EXISTS `user`;
+
 
 CREATE TABLE `user` (
   `user_name` varchar(255) DEFAULT NULL,
