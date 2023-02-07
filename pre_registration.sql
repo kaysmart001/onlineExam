@@ -16,7 +16,7 @@ MySQL - 5.7.14-log : Database - pre_registration
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 
-USE `pre_registration`;
+
 
 /*Table structure for table `answer` */
 
