@@ -22,23 +22,7 @@ MySQL - 5.7.14-log : Database - pre_registration
 
 
 
-CREATE TABLE `answer` (
-  `sid` int(7) NOT NULL,
-  `subid` varchar(7) DEFAULT NULL,
-  `total_marks` int(10) DEFAULT NULL,
-  `student_marks` int(10) DEFAULT NULL,
-  PRIMARY KEY (`sid`),
-  KEY `subid` (`subid`),
-  ALTER TABLE `answer` ADD CONSTRAINT `answer_ibfk_1` FOREIGN KEY (`sid`) REFERENCES `student` (`sid`),
 
-  ALTER TABLE `answer` ADD CONSTRAINT `answer_ibfk_3` FOREIGN KEY (`subid`) REFERENCES `subject` (`subid`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-/*Data for the table `answer` */
-
-insert  into `answer`(`sid`,`subid`,`total_marks`,`student_marks`) values (1330082,'CSC101',3,0),(1330314,'CSC101',3,3);
-
-/*Table structure for table `course` */
 
 
 
